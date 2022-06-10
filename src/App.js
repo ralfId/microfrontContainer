@@ -15,11 +15,12 @@ const {
 
 function Mfe1({ history }) {
     return <MicroFrontend history={history} host={mfe1Host} name="Mfe1" />;
-  }
+}
 
-  function Mfe2({ history }) {
+function Mfe2({ history }) {
     return <MicroFrontend history={history} host={mfe2Host} name="Mfe2" />;
-  }
+}
+
 
 function App() {
     return (
@@ -106,15 +107,12 @@ function App() {
                             </div>
                         </div>
                     </div>
+
+
                     <div className="col py-3">
-                        <div className="row">
-
-                            <Mfe1/>
-                        </div>
-                        <div className="row">
-
-                            <Mfe2/>
-                        </div>
+                            <Mfe1 />
+                            <Mfe2 />
+                       
                     </div>
                 </div>
             </div>
